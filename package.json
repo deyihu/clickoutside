@@ -20,6 +20,10 @@
     "url": "https://github.com/deyihu/domclickoutside/issues"
   },
   "homepage": "https://github.com/deyihu/domclickoutside#readme",
+  "files": [
+    "dist/",
+    "index.js"
+  ],
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-json": "^6.0.0",
