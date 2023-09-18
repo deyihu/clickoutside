@@ -1,8 +1,8 @@
 {
-  "name": "clickoutside",
+  "name": "domclickoutside",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/clickoutside.js",
+  "main": "dist/domclickoutside.js",
   "module": "index.js",
   "scripts": {
     "lint": "eslint ./*.js",
