@@ -1,0 +1,38 @@
+{
+  "name": "clickoutside",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/clickoutside.js",
+  "module": "index.js",
+  "scripts": {
+    "lint": "eslint ./*.js",
+    "dev": "npm run lint && cross-env NODE_ENV=dev  rollup -w -c --bundleConfigAsCjs",
+    "build": "npm run lint && cross-env NODE_ENV=prd  rollup -c --bundleConfigAsCjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deyihu/domclickoutside.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deyihu/domclickoutside/issues"
+  },
+  "homepage": "https://github.com/deyihu/domclickoutside#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "cross-env": "^5.1.4",
+    "eslint": "^6.2.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "rollup": "^3.29.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}

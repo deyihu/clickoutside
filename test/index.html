@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mdeditor test</title>
+<style type="text/css">
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        font-family: 微软雅黑;
+        overflow: hidden;
+    }
+
+    .container {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        /* margin-top: 10px; */
+    }
+
+    .panel {
+        border: 1px solid gray;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<script src="./../dist/clickoutside.js"></script>
+
+
+<body>
+    <div class="container">
+        <div class="panel" id="test1"></div>
+    </div>
+
+
+    <script>
+
+        const ClickOutSide = clickoutside.create();
+        const dom1 = document.querySelector('#test1');
+        ClickOutSide.addDom(dom1);
+        dom1.addEventListener('clickoutside', e => {
+            console.log(e.type, e);
+        })
+        dom1.addEventListener('clickinside', e => {
+            console.log(e.type, e);
+        })
+
+
+    </script>
+</body>
+
+</html>
